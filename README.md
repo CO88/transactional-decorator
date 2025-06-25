@@ -1,4 +1,4 @@
-# Transaction Decorator Monorepo
+# Transaction Decorator
 
 A modular transaction decorator library supporting multiple ORMs through adapter packages.
 
