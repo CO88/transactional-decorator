@@ -1,0 +1,39 @@
+{
+  "name": "@co88/transaction-decorator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Transaction decorator",
+  "author": {
+    "name": "CO88",
+    "email": "blanccobb@gmail.com"
+  },
+  "scripts": {
+    "build": "tsc -b -v packages",
+    "build:prod": "tsc -b -v packages",
+    "clean": "tsc -b --clean packages",
+    "prerelease": "npm run clean",
+    "test:core": "jest --config packages/core/jest.config.ts",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "version": "lerna version",
+    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish --access public --exact",
+    "publish:from-git": "lerna publish from-git",
+    "dev": "lerna run dev --parallel"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "jest": "^29.7.0",
+    "lerna": "^8.0.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "license": "MIT"
+}

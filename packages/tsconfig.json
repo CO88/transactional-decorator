@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./core/tsconfig.build.json"
+    },
+    {
+      "path": "./adapter-mongoose/tsconfig.build.json"
+    },
+    {
+      "path": "./adapter-prisma/tsconfig.build.json"
+    },
+    {
+      "path": "./adapter-typeorm/tsconfig.build.json"
+    }
+  ]
+}

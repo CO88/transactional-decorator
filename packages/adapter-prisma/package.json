@@ -1,0 +1,47 @@
+{
+  "name": "@co88/transaction-decorator-adapter-prisma",
+  "version": "1.0.0",
+  "description": "Prisma adapter for transaction decorator",
+  "author": {
+    "name": "CO88",
+    "email": "blanccobb@gmail.com"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "docker:up": "docker-compose -f test/docker-compose.test.yaml up -d",
+    "docker:down": "docker-compose -f test/docker-compose.test.yaml down -v",
+    "test:init": "yarn docker:up && yarn prisma migrate deploy --schema test/fixture/ && yarn prisma generate --schema test/fixture/",
+    "test": "yarn docker:up && yarn prisma migrate deploy --schema test/fixture/ && jest -i"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "@co88/transaction-decorator-core": "../core/"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.8.2",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.14",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.0",
+    "prisma": "^6.10.1",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@co88/transaction-decorator-core": ["./packages/core"],
+      "@co88/transaction-decorator-core/*": ["./packages/core/*"],
+      "@co88/transaction-decorator-adapter-typeorm": ["./packages/adapter-typeorm"],
+      "@co88/transaction-decorator-adapter-typeorm/*": ["./packages/adapter-typeorm/*"],
+      "@co88/transaction-decorator-adapter-prisma": ["./packages/adapter-prisma"],
+      "@co88/transaction-decorator-adapter-prisma/*": ["./packages/adapter-prisma/*"],
+      "@co88/transaction-decorator-adapter-mongoose": ["./packages/adapter-mongoose"],
+      "@co88/transaction-decorator-adapter-mongoose/*": ["./packages/adapter-mongoose/*"]
+    }
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"]
+}
