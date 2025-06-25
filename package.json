@@ -1,8 +1,11 @@
 {
   "name": "@co88/transaction-decorator",
   "version": "1.0.0",
-  "private": true,
   "description": "Transaction decorator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CO88/transactional-decorator.git"
+  },
   "author": {
     "name": "CO88",
     "email": "blanccobb@gmail.com"
