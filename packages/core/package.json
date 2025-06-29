@@ -1,7 +1,12 @@
 {
   "name": "@co88/transaction-decorator-core",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Core transaction decorator library with common interfaces and utilities",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CO88/transactional-decorator.git",
+    "directory": "packages/core"
+  },
   "author": {
     "name": "CO88",
     "email": "blanccobb@gmail.com"

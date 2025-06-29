@@ -1,6 +1,6 @@
 {
   "name": "@co88/transaction-decorator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Transaction decorator",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "version": "lerna version",
-    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish --access public --exact",
+    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish",
     "publish:from-git": "lerna publish from-git",
     "dev": "lerna run dev --parallel"
   },
