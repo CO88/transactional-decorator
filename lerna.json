@@ -1,21 +1,5 @@
 {
   "version": "0.0.1",
-  "command": {
-    "publish": {
-      "conventionalCommits": true,
-      "message": "chore(@co88): publish %s release",
-      "registry": "https://registry.npmjs.org/",
-      "verifyAccess": false
-    },
-    "version": {
-      "allowBranch": [
-        "main",
-        "master"
-      ],
-      "conventionalCommits": true,
-      "exact": true
-    }
-  },
   "packages": [
     "packages/*"
   ]
