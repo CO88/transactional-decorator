@@ -19,7 +19,7 @@
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "version": "lerna version",
-    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish",
+    "publish": "npm run prerelease && npm run build:prod && ./node_modules/.bin/lerna publish --force-publish --exact -m \"chore(@co88) publish %s release\"",
     "publish:from-git": "lerna publish from-git",
     "dev": "lerna run dev --parallel"
   },
