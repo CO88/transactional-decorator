@@ -1,13 +1,10 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "command": {
     "publish": {
       "forcePublish": true,
       "exact": true,
       "message": "chore(@co88) publish %s release"
-    },
-    "version": {
-      "ignoreChanges": ["lerna.json", "**/*-lock.json"]
     }
   },
   "packages": ["packages/*"],

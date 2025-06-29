@@ -1,6 +1,6 @@
 {
   "name": "@co88/transaction-decorator-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core transaction decorator library with common interfaces and utilities",
   "repository": {
     "type": "git",
