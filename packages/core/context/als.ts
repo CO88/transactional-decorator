@@ -31,7 +31,6 @@ class Als {
   }
 
   get<T>(key: StorageKey): T | undefined {
-    console.log(`get ${String(key)}}`)
     if (!this.store()) {
       return undefined;
     }
