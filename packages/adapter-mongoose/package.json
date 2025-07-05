@@ -1,6 +1,6 @@
 {
   "name": "@co88/transaction-decorator-adapter-mongoose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mongoose adapter for transaction decorator",
   "repository": {
     "type": "git",
