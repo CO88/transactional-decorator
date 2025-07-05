@@ -1,6 +1,6 @@
 {
   "name": "@co88/transaction-decorator-adapter-typeorm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeORM adapter for transaction decorator",
   "repository": {
     "type": "git",
