@@ -1,5 +1,5 @@
 {
-  "name": "@co88/transaction-decorator",
+  "name": "@co88/transaction-decorator-core",
   "version": "0.0.1",
   "description": "Transaction decorator",
   "repository": {
