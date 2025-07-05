@@ -6,10 +6,10 @@ A modular transaction decorator library supporting multiple ORMs through adapter
 
 | Package | Version | Description |
 |---------|---------|-------------|
-| [@co88/transaction-decorator-core](./packages/core) | 1.0.0 | Core interfaces and decorator |
-| [@co88/transaction-decorator-adapter-mongoose](./packages/adapter-mongoose) | 1.0.0 | Mongoose adapter |
-| [@co88/transaction-decorator-adapter-prisma](./packages/adapter-prisma) | 1.0.0 | Prisma adapter |
-| [@co88/transaction-decorator-adapter-typeorm](./packages/adapter-typeorm) | 1.0.0 | TypeORM adapter |
+| [@co88/transaction-decorator-core](./packages/core) | 0.0.3   | Core interfaces and decorator |
+| [@co88/transaction-decorator-adapter-mongoose](./packages/adapter-mongoose) | 0.0.3   | Mongoose adapter |
+| [@co88/transaction-decorator-adapter-prisma](./packages/adapter-prisma) | 0.0.3   | Prisma adapter |
+| [@co88/transaction-decorator-adapter-typeorm](./packages/adapter-typeorm) | 0.0.3   | TypeORM adapter |
 
 ## Quick Start
 
@@ -126,14 +126,6 @@ packages/
 3. **Proxy Pattern**: Each adapter uses proxy/middleware to inject transactions
 4. **AsyncLocalStorage**: Maintains transaction context across async calls
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Run `npm run test` and `npm run lint`
-6. Create a Pull Request
 
 ## License
 
